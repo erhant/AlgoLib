@@ -1,2 +1,2 @@
 # AlgoLib
-Some algorithms i discovered in my free time, written the way i implemented them, and it could differ from the actual implementation.
+This is a collection of algorithms, including the ones i discovered on my own.
