@@ -1,0 +1,5 @@
+C:\Users\erhan\Desktop\My Works\Algorithms Library\Algolib\Algolib\bin\Debug\Algolib.dll
+C:\Users\erhan\Desktop\My Works\Algorithms Library\Algolib\Algolib\bin\Debug\Algolib.pdb
+C:\Users\erhan\Desktop\My Works\Algorithms Library\Algolib\Algolib\obj\Debug\Algolib.csprojResolveAssemblyReference.cache
+C:\Users\erhan\Desktop\My Works\Algorithms Library\Algolib\Algolib\obj\Debug\Algolib.dll
+C:\Users\erhan\Desktop\My Works\Algorithms Library\Algolib\Algolib\obj\Debug\Algolib.pdb

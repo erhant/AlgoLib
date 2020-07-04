@@ -1,0 +1,95 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="561.842" Width="661.842">
+    <Grid Margin="0,0,0,-1">
+        <Menu Height="54" VerticalAlignment="Top">
+            <MenuItem Header="Number" Height="54" FontSize="16">
+                <MenuItem Header="Algorithms">
+                    <MenuItem x:Name="getPositiveDividers" Header="Get Positive Dividers" Click="getPositiveDividers_Click_1"/>
+                    <MenuItem x:Name="getPrimeFactors" Header="Get Prime Factors" Click="getPrimeFactors_Click_1"/>
+                    <MenuItem x:Name="getGreekType" Header="Get Greek Type" Click="getGreekType_Click_1"/>
+                    <MenuItem x:Name="isPrime" Header="Is Prime" Click="isPrime_Click_1"/>
+                    <MenuItem x:Name="isPerfectSqr" Header="Is Perfect Square" Click="isPerfectSqr_Click_1"/>
+                    <MenuItem x:Name="isKaprekarNumber" Header="Is Kaprekar Number" Click="isKaprekarNumber_Click_1"/>
+                    <MenuItem x:Name="isHarshadNumber" Header="Is Harshad Number" Click="isHarshadNumber_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Constants">
+                    <MenuItem x:Name="piConst" Header="Pi 3,14..." Click="piConst_Click_1"/>
+                    <MenuItem x:Name="eConst" Header="E 2.71..." Click="eConst_Click_1"/>
+                    <MenuItem x:Name="phiConst" Header="Phi 1.68..." Click="phiConst_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem x:Name="reverse" Header="Reverse" Click="reverse_Click_1"/>
+                    <MenuItem x:Name="random" Header="Randomize" Click="random_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Pair">
+                    <MenuItem x:Name="friendly" Header="Are Friendly" Click="friendly_Click_1"/>
+                    <MenuItem x:Name="amicable" Header="Are Amicable" Click="amicable_Click_1"/>
+                    <MenuItem x:Name="gcf" Header="Greatest Common Factor" Click="gcf_Click_1"/>
+                    <MenuItem x:Name="lcm" Header="Least Common Multiple" Click="lcm_Click_1"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Array" FontSize="16">
+                <MenuItem Header="Generate">
+                    <MenuItem x:Name="genRandArr" Header="Random Array" Click="genRandArr_Click_1"/>
+                    <MenuItem x:Name="genSortedAarr" Header="Sorted A Array" Click="genSortedAarr_Click_1"/>
+                    <MenuItem x:Name="genSortedDarr" Header="Sorted D Array" Click="genSortedDarr_Click_1"/>
+                    <MenuItem x:Name="genRdmNoRecurArr" Header="Random No Recur Array" Click="genRdmNoRecurArr_Click_1"/>
+                    <MenuItem x:Name="genSqnArr" Header="Sequential Array" Click="genSqnArr_Click_1"/>
+                    <MenuItem x:Name="genIncrArr" Header="Incrmenetial Array" Click="genIncrArr_Click_1"/>
+                    <MenuItem x:Name="genFiboArr" Header="Fibonacci Array" Click="genFiboArr_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Sort">
+                    <MenuItem x:Name="selSortA" Header="Selection Sort A" Click="selSortA_Click_1"/>
+                    <MenuItem x:Name="sesSortD" Header="Selection Sort D" Click="sesSortD_Click_1"/>
+                    <MenuItem x:Name="bubbleSort" Header="Bubble" Click="bubbleSort_Click_1"/>
+                    <MenuItem x:Name="heapSort" Header="Heap Sort" Click="heapSort_Click_1"/>
+                    <MenuItem x:Name="countSortFreq" Header="Count Sort Freq" Click="countSortFreq_Click_1"/>
+                    <MenuItem x:Name="countSortScore" Header="Count Sort Score" Click="countSortScore_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Search">
+                    <MenuItem x:Name="linearSearch" Header="Linear Search" Click="linearSearch_Click_1"/>
+                    <MenuItem x:Name="binarySearch" Header="Count Sort Score" Click="binarySearch_Click_1"/>
+                </MenuItem>
+                <MenuItem Header="Misc">
+                    <MenuItem x:Name="findMedian" Header="Find Median" Click="findMedian_Click_1"/>
+                    <MenuItem x:Name="findAvarage" Header="Find Avarage" Click="findAvarage_Click_1"/>
+                    <MenuItem x:Name="findMax" Header="Find Maximum" Click="findMax_Click_1"/>
+                    <MenuItem x:Name="findMin" Header="Find Minimum" Click="findMin_Click_1"/>
+                    <MenuItem x:Name="oddEvenHeap" Header="Odd-Even Heap" Click="oddEvenHeap_Click_1"/>
+                    <MenuItem Header="Recurrence">
+                        <MenuItem x:Name="hasRecurrence" Header="Has Recurrence" Click="hasRecurrence_Click_1"/>
+                        <MenuItem x:Name="findMostRecurringElement" Header="Most Recurring Element" Click="findMostRecurringElement_Click_1"/>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="openImgWindow" Header="Image" Click="openImgWindow_Click_1" FontSize="16"/>
+            <MenuItem x:Name="openTxtWindow" Header="Text" Click="openTxtWindow_Click_1" FontSize="16"/>
+            <MenuItem Header="Graph" FontSize="16">
+                <MenuItem x:Name="lineGraph" Header="Line Graph" Click="lineGraph_Click_1"/>
+                <MenuItem Header="Sample">
+                    <MenuItem x:Name="cycleGraphNonD" Header="Cycle Graph Non-Directed" Click="cycleGraphNonD_Click_1"/>
+                    <MenuItem x:Name="cycleGraphDirected" Header="Cycle Graph Directed" Click="cycleGraphDirected_Click_1"/>
+                    <MenuItem x:Name="wheelGraphNonD" Header="Wheel Graph Non-Directed" Click="wheelGraph_Click_1"/>
+                    <MenuItem x:Name="wheelGraphDirected" Header="Wheel Graph Directed" Click="wheelGraphDirected_Click_1"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="&#xD;&#xA;&#xD;&#xA;This is a collection of many algorithms.&#xD;&#xA;All are written by Erhan Tezcan.&#xD;&#xA;***&#xD;&#xA;Number 2 is used as second parameter when needed for Number section.&#xD;&#xA;***&#xD;&#xA;Array Adder controls the difference between elements when generating.&#xD;&#xA;***&#xD;&#xA;Number 1 is also used as number of lines ( Edges) and Number 2 is also used as the number of nodes ( Vertexes ) when creating a sample graph." Width="625" IsReadOnly="True" Margin="10,62,0,106" FontSize="18" TextAlignment="Center"/>
+        <TextBox x:Name="txtBox_Num1" HorizontalAlignment="Left" Height="35" Margin="10,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_Num1_TextChanged"/>
+        <TextBox x:Name="txtBox_Num2" HorizontalAlignment="Left" Height="35" Margin="107,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_Num2_TextChanged"/>
+        <TextBox x:Name="txtBox_ArrSize" HorizontalAlignment="Left" Height="35" Margin="252,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_ArrSize_TextChanged_1"/>
+        <TextBox x:Name="txtBox_ArrAdder" HorizontalAlignment="Left" Height="35" Margin="349,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_ArrAdder_TextChanged_1"/>
+        <TextBox x:Name="txtBox_ArrMax" HorizontalAlignment="Left" Height="35" Margin="446,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_ArrMax_TextChanged"/>
+        <TextBox x:Name="txtBox_ArrSearch" HorizontalAlignment="Left" Height="35" Margin="543,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" TextChanged="txtBox_ArrSearch_TextChanged_1"/>
+        <Label Content="Number 1" HorizontalAlignment="Left" Height="26" Margin="10,433,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Number 2" HorizontalAlignment="Left" Height="26" Margin="107,433,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Array Size" HorizontalAlignment="Left" Height="26" Margin="252,433,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Array Adder" HorizontalAlignment="Left" Height="26" Margin="349,433,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Array Max" HorizontalAlignment="Left" Height="26" Margin="446,433,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Array Search" HorizontalAlignment="Left" Height="26" Margin="543,433,0,0" VerticalAlignment="Top" Width="92"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" x:Class="WpfApplication1.ImageWindow"
+        Title="ImageWindow" Height="300" Width="300">
+    <Grid>
+        <Grid>
+            <Image x:Name="imageHere" Margin="0,39,0,0" Loaded="import_Click"/>
+            <Menu Height="39" VerticalAlignment="Top">
+                <MenuItem Header="Algorithms" Height="39">
+                    <MenuItem x:Name="toGrayscale" Header="To Grayscale" Click="toGrayscale_Click_1"/>
+                    <MenuItem Header="To Binary">
+                        <MenuItem x:Name="toBinaryMedian" Header="Median Filter" Click="toBinaryMedian_Click_1" />
+                        <MenuItem x:Name="toBinaryAvarage" Header="Avarage Filter" Click="toBinaryAvarage_Click_1" />
+                        <MenuItem x:Name="toBinaryAvarageColored" Header="Avarage Color Filter" Click="toBinaryAvarageColored_Click_1" />
+                    </MenuItem>
+                    <MenuItem x:Name="toTernary" Header="To Trenary" Click="toTernary_Click_1"/>
+                    <MenuItem x:Name="toOctonary" Header="To Octonary" Click="toOctonary_Click_1"/>
+                    <MenuItem x:Name="toNegative" Header="To Negative" Click="toNegative_Click_1"/>
+                    <MenuItem Header="To Erhan" >
+                        <MenuItem x:Name="toErhanRGB1" Header="RGB 1" Click="toErhanRGB1_Click_1"/>
+                        <MenuItem x:Name="toErhanGray" Header="Grayscale" Click="toErhanGray_Click_1" />
+                    </MenuItem>
+                    <MenuItem Header="Edit" >
+                        <MenuItem x:Name="rotateRight" Header="Rotate Right 90*" Click="rotateRight_Click_1" />
+                        <MenuItem x:Name="rotateLeft" Header="Rotate Left 90*" Click="rotateLeft_Click_1"/>
+                        <MenuItem x:Name="flipVertical" Header="Flip Vertical" Click="flipVertical_Click_1" />
+                        <MenuItem x:Name="flipHorizontal" Header="Flip Horizontal" Click="flipHorizontal_Click_1" />
+                        <MenuItem x:Name="sortVertical" Header="Sort Vertical" Click="sortVertical_Click_1"/>
+                        <MenuItem x:Name="sortHorizontal" Header="Sort Horizontal" Click="sortHorizontal_Click_1"/>
+                        <MenuItem x:Name="maxAlpha" Header="Maximiza Alpha" Click="maxAlpha_Click_1"/>
+                        <MenuItem x:Name="minAlpha" Header="Minimize Alpha" Click="minAlpha_Click_1"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="import" Header="Import" Click="import_Click"/>
+                <MenuItem x:Name="export" Header="Export" Click="export_Click" />
+                <MenuItem x:Name="restore" Header="Restore" Click="restore_Click"/>
+            </Menu>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.TextWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextWindow" Height="300" Width="300">
+    <Grid Margin="0,0,2,0">
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Algorithms" Height="25">
+                <MenuItem x:Name="reverse" Header="Reverse" Click="reverse_Click_1"/>
+                <MenuItem x:Name="toRobotLang" Header="Robotify" Click="toRobotLang_Click_1"/>
+                <MenuItem x:Name="searchText" Header="Search Text" Click="searchText_Click_1"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="textBox1" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="105" Margin="10,35,10,0" TextWrapping="Wrap" Text="Enter Your Text Here" VerticalAlignment="Top"/>
+        <TextBox x:Name="searchTextBox" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="53" Margin="10,145,10,0" TextWrapping="Wrap" Text="Search Text Here" VerticalAlignment="Top"/>
+        <TextBox x:Name="resultsTxtBox" IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="51" Margin="10,203,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

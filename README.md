@@ -1,5 +1,4 @@
-# AlgoLib
-This is a collection of algorithms, including the ones i discovered on my own.
-All are handwritten by me, however, i used help from Geeks4Geeks and a turkish book titled: "Teoriden Uygulamalarla Algoritmalar" by Vasip Nabiyev.
+This repository is a collection of algorithms I wrote for fun back in undergraduate days. I initially wrote the C# Library, under `C# Library`, but then I worked on WPF application for the same code, which is under `C# GUI` and then tried something similar for Java, under `Java GUI`.
 
-NOTE: Graph algorithms not avalible yet
+
+Note from July 4, 2020: I thought I lost this code, but found it in a random drive laying around the house!
